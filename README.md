@@ -5,7 +5,7 @@
 ----
 
 dependencies {<br>
-      compile 'com.zh.network:frame:1.0.0' exclude group: 'com.android.support'//当前版本为1.0.0版本；<br>
+            compile 'com.zh.network:frame:1.0.0' exclude group: 'com.android.support'//当前版本为1.0.0版本；<br>
 }<br>
 
 
@@ -13,9 +13,9 @@ dependencies {<br>
 ---
 
 allprojects {<br>
-      repositories {<br>
-         maven{<br>
-               url "https://github.com/NetworkFrame/NetworkFrame/raw/master"<br>
+             repositories {<br>
+                   maven{<br>
+                        url "https://github.com/NetworkFrame/NetworkFrame/raw/master"<br>
         }<br>
     }<br>
 }<br>
