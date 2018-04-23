@@ -4,40 +4,40 @@
 在app目录下的build.gradle中添加如下代码
 ----
 
-dependencies {
-   compile 'com.zh.network:frame:1.0.0' exclude group: 'com.android.support'//当前版本为1.0.0版本；
-}
+dependencies {<br>
+      compile 'com.zh.network:frame:1.0.0' exclude group: 'com.android.support'//当前版本为1.0.0版本；<br>
+}<br>
 
 
 在project根目录下的build.gradle中添加如下代码
 ---
 
-allprojects {
-    repositories {
-        maven{
-            url "https://github.com/NetworkFrame/NetworkFrame/raw/master"
-        }
-    }
-}
+allprojects {<br>
+      repositories {<br>
+         maven{<br>
+               url "https://github.com/NetworkFrame/NetworkFrame/raw/master"<br>
+        }<br>
+    }<br>
+}<br>
 
 
 混淆：
 ----
- -keepattributes InnerClasses
- -dontoptimize
+ -keepattributes InnerClasses<br>
+ -dontoptimize<br>
  
- -dontwarn cn.finalteam.okhttpfinal.**
- -keep public class cn.finalteam.okhttpfinal.**{*;}
+ -dontwarn cn.finalteam.okhttpfinal.**<br>
+ -keep public class cn.finalteam.okhttpfinal.**{*;}<br>
 
- -dontwarn okhttp3.**
- -keep public class okhttp3.**{*;}
+ -dontwarn okhttp3.**<br>
+ -keep public class okhttp3.**{*;}<br>
 
- -dontwarn okio.**
- -keep public class okio.**{*;}
+ -dontwarn okio.**<br>
+ -keep public class okio.**{*;}<br>
 
- #fastjson混淆---本包引用了fastjson.android包
- -dontwarn com.alibaba.fastjson.**
- -keep class com.alibaba.fastjson.**{*; }
+ #fastjson混淆---本包引用了fastjson.android包<br>
+ -dontwarn com.alibaba.fastjson.**<br>
+ -keep class com.alibaba.fastjson.**{*; }<br>
 
 
 
