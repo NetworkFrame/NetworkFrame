@@ -1,6 +1,8 @@
 使用步骤：
+==========
 
 在app目录下的build.gradle中添加如下代码
+----
 
 dependencies {
    compile 'com.zh.network:frame:1.0.0' exclude group: 'com.android.support'//当前版本为1.0.0版本；
@@ -8,6 +10,8 @@ dependencies {
 
 
 在project根目录下的build.gradle中添加如下代码
+---
+
 allprojects {
     repositories {
         maven{
@@ -18,6 +22,7 @@ allprojects {
 
 
 混淆：
+----
  -keepattributes InnerClasses
  -dontoptimize
  
