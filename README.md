@@ -1,12 +1,26 @@
 使用步骤：
 ==========
+在Application中做如下初始化：
+
+                private void initOkHttpUtils() {
+                    try {
+                        //是否开启debug模式
+                        OkHttpUtils.debug(AppUtils.isDebug(), "Okhttp");
+                        //设置超时时间   OkHttpUtils.getInstance().setConnectTimeout(OkHttpUtils.DEFAULT_MILLISECONDS).setReadTimeOut(OkHttpUtils.DEFAULT_MILLISECONDS).setWriteTimeOut(OkHttpUtils.DEFAULT_MILLISECONDS);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                }
+
+
 
 在app目录下的build.gradle中添加如下代码
 ----
 
-dependencies {<br>
-            compile 'com.zh.network:frame:1.0.0' exclude group: 'com.android.support'//当前版本为1.0.0版本；<br>
-}<br>
+            dependencies {
+                compile 'com.zh.network:frame:1.0.0' exclude group: 'com.android.support'//当前版本为1.0.0版本；
+            }
 
 
 在project根目录下的build.gradle中添加如下代码
