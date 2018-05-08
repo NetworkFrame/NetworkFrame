@@ -2,16 +2,16 @@
 ==========
 在Application中做如下初始化：
 
-                private void initOkHttpUtils() {
-                    try {
-                        //是否开启debug模式
-                        OkHttpUtils.debug(AppUtils.isDebug(), "Okhttp");
-                        //设置超时时间   OkHttpUtils.getInstance().setConnectTimeout(OkHttpUtils.DEFAULT_MILLISECONDS).setReadTimeOut(OkHttpUtils.DEFAULT_MILLISECONDS).setWriteTimeOut(OkHttpUtils.DEFAULT_MILLISECONDS);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
+                  private void initOkHttpUtils() {
+                      try {
+                          //是否开启debug模式
+                          OkHttpUtils.debug(AppUtils.isDebug(), "Okhttp");
+                          //设置超时时间   OkHttpUtils.getInstance().setConnectTimeout(OkHttpUtils.DEFAULT_MILLISECONDS).setReadTimeOut(OkHttpUtils.DEFAULT_MILLISECONDS).setWriteTimeOut(OkHttpUtils.DEFAULT_MILLISECONDS);
+                      } catch (Exception e) {
+                          e.printStackTrace();
+                      }
 
-                }
+                  }
 
 
 
